@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="salarioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOL-Zz-7Hg">
+                                <rect key="frame" x="16" y="49" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira o nome do funcionario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cr5-T2-m7e">
+                                <rect key="frame" x="16" y="78" width="288" height="34"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salario:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzI-n3-mTs">
+                                <rect key="frame" x="16" y="130" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Valor liquido do salário" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="10k-sq-MeL">
+                                <rect key="frame" x="16" y="159" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profissão:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHv-Ec-eIa">
+                                <rect key="frame" x="16" y="212" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uev-Hp-sy0">
+                                <rect key="frame" x="75" y="381" width="170" height="31"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular">
+                                    <color key="baseForegroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="calcularButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kK-Zt-aQx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 - Desenvolvedor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uu-Om-IUX">
+                                <rect key="frame" x="16" y="241" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 - Dba ou Testadores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAG-fB-epQ">
+                                <rect key="frame" x="16" y="270" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 - Gerentes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pM-db-thT">
+                                <rect key="frame" x="16" y="299" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escreva a opção listada acima..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Rk-By-Ysd">
+                                <rect key="frame" x="16" y="328" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="Cr5-T2-m7e" firstAttribute="leading" secondItem="kzI-n3-mTs" secondAttribute="leading" id="0Qj-PY-JKd"/>
+                            <constraint firstItem="Uev-Hp-sy0" firstAttribute="top" secondItem="3Rk-By-Ysd" secondAttribute="bottom" constant="19" id="19G-3d-0CO"/>
+                            <constraint firstItem="fAG-fB-epQ" firstAttribute="top" secondItem="6uu-Om-IUX" secondAttribute="bottom" constant="8" id="6KO-Gg-ttg"/>
+                            <constraint firstItem="Cr5-T2-m7e" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7So-uu-JgC"/>
+                            <constraint firstItem="10k-sq-MeL" firstAttribute="top" secondItem="kzI-n3-mTs" secondAttribute="bottom" constant="8" id="7VT-lS-fsa"/>
+                            <constraint firstItem="10k-sq-MeL" firstAttribute="leading" secondItem="VHv-Ec-eIa" secondAttribute="leading" id="CJl-oU-Fj1"/>
+                            <constraint firstItem="3Rk-By-Ysd" firstAttribute="centerX" secondItem="Uev-Hp-sy0" secondAttribute="centerX" id="KZG-pT-1LY"/>
+                            <constraint firstItem="HOL-Zz-7Hg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="LEC-l3-dYp"/>
+                            <constraint firstItem="6uu-Om-IUX" firstAttribute="top" secondItem="VHv-Ec-eIa" secondAttribute="bottom" constant="8" id="MAE-Kv-ZfQ"/>
+                            <constraint firstItem="fAG-fB-epQ" firstAttribute="leading" secondItem="3pM-db-thT" secondAttribute="leading" id="NyR-yJ-Zic"/>
+                            <constraint firstItem="kzI-n3-mTs" firstAttribute="top" secondItem="Cr5-T2-m7e" secondAttribute="bottom" constant="18" id="TQk-Ml-Vi5"/>
+                            <constraint firstItem="3pM-db-thT" firstAttribute="top" secondItem="fAG-fB-epQ" secondAttribute="bottom" constant="8" id="VLO-iN-ZpF"/>
+                            <constraint firstItem="VHv-Ec-eIa" firstAttribute="leading" secondItem="6uu-Om-IUX" secondAttribute="leading" id="WmZ-iJ-AtX"/>
+                            <constraint firstItem="10k-sq-MeL" firstAttribute="trailing" secondItem="3Rk-By-Ysd" secondAttribute="trailing" id="ZUb-JW-WkA"/>
+                            <constraint firstItem="Cr5-T2-m7e" firstAttribute="top" secondItem="HOL-Zz-7Hg" secondAttribute="bottom" constant="8" id="ZtS-7Q-bTv"/>
+                            <constraint firstItem="kzI-n3-mTs" firstAttribute="leading" secondItem="10k-sq-MeL" secondAttribute="leading" id="Zyz-k8-eRo"/>
+                            <constraint firstItem="Cr5-T2-m7e" firstAttribute="trailing" secondItem="10k-sq-MeL" secondAttribute="trailing" id="bk4-Zk-ve0"/>
+                            <constraint firstItem="3Rk-By-Ysd" firstAttribute="top" secondItem="3pM-db-thT" secondAttribute="bottom" constant="8" id="dkt-5r-hjv"/>
+                            <constraint firstItem="HOL-Zz-7Hg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mNd-Ak-J4Z"/>
+                            <constraint firstItem="3pM-db-thT" firstAttribute="leading" secondItem="3Rk-By-Ysd" secondAttribute="leading" id="mja-E4-639"/>
+                            <constraint firstItem="HOL-Zz-7Hg" firstAttribute="leading" secondItem="Cr5-T2-m7e" secondAttribute="leading" id="nhO-y9-WDF"/>
+                            <constraint firstItem="VHv-Ec-eIa" firstAttribute="top" secondItem="10k-sq-MeL" secondAttribute="bottom" constant="19" id="npF-HA-b4h"/>
+                            <constraint firstItem="6uu-Om-IUX" firstAttribute="leading" secondItem="fAG-fB-epQ" secondAttribute="leading" id="rUY-wT-xdT"/>
+                            <constraint firstItem="Uev-Hp-sy0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="zod-71-mB9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nomeDoFuncionarioTextField" destination="Cr5-T2-m7e" id="oTr-Ep-axv"/>
+                        <outlet property="profissãoTextField" destination="3Rk-By-Ysd" id="ETx-K7-eZy"/>
+                        <outlet property="salarioTextField" destination="10k-sq-MeL" id="gib-og-xSR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
