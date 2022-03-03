@@ -27,11 +27,18 @@ class ViewController: UIViewController {
         
         var funcionario: String = " "
         var salarioLiquido: Double = 0.0
-        
         // MARK: Conversão
         
         guard let salario = Double(salarioTextField?.text ?? "0") else {erro(); return}
-        guard let profissão = Int(profissãoTextField?.text ?? " ") else {return}
+        guard let profissão = Int(profissãoTextField?.text ?? " ") else {alerta()
+            return}
+        if profissão <= 0 {
+            alerta()
+        }
+        
+        if salario == 0 {
+            erro()
+        }
     
         // MARK: Funcões
         
@@ -111,7 +118,7 @@ class ViewController: UIViewController {
                     resultado()
                 }
             }
-        }else{
+        }else if profissão > 3 || profissão < 1{
             alerta()
             return
         }
